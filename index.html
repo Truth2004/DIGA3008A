@@ -5,28 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A showcase of my Digital Art, Game Design and Interactive Media">
-    <title>Portforlio Website</title>
+    <title>Portfolio Website</title>
 </head>
 
 <body>
-    <h1>Homepage</h1>
+    <header class="h-card">
+        <h1>Homepage</h1>
 
-    <nav>
-        <ul>
-            <li><a href="Game Dev/gamedev.html">Game Dev</li>
-            <li><a href="Galley/gallery.html">Gallery</li>
-            <li><a href="Blogs/blogs.html">Blogs</li>
-            <li><a href="Essays/essays.html">Essays</li>
-            <li><a href="Web Design/web design.html">Web Design</li>
-            <li><a href="About/about.html">About</a></li>
-        </ul>
-    </nav>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="game-dev/game-dev.html">Game Dev</li>
+                <li><a href="gallery/gallery.html">Gallery</li>
+                <li><a href="blogs/blogs.html">Blogs</li>
+                <li><a href="essays/essays.html">Essays</li>
+                <li><a href="web-design/web-design.html">Web Design</li>
+                <li><a href="about/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div></div>
-    <p> Hi, My name is Nhlanzeko! <br>
-        Game Designer & Web Developer <br> </p>
-    <img src="images/Me and Toffee.jpg" alt="Me and Toffee" height="250" width="150">
+    <main>
+        <h2>Welcome</h2>
+        <p> Hi, My name is <span class="p-name">Nhlanzeko</span>! <br>
+            <span class="p-job-title">Game Designer & Web Developer</span>
+        </p>
+        <img class="u-photo" src="images/Me and Toffee.jpg" alt="Picture of Nhlanzeko holding a Teddy bear" height="250"
+            width="150">
+    </main>
 
+    <footer>
+        <p>2025 Nhlanzeko. All rights reserved.</p>
+    </footer>
 
 </body>
 
