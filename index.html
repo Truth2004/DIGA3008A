@@ -6,15 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A showcase of my Digital Art, Game Design and Interactive Media">
     <meta name="author" content="Nhlanzeko">
+    <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/50a1a2d140.js" crossorigin="anonymous"></script>
+
     <title>Portfolio Website</title>
 </head>
 
 <body>
     <header class="h-card">
-        <h1>Homepage</h1>
+
 
         <nav aria-label="Main Navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="burger-button"><i class="fa-solid fa-angle-down"
+                    style="color: #ffffff;"></i></i></label>
+
+            <label for="Page" class="Page">Homepage</label>
+
             <ul>
                 <li><a href="game-dev/game-dev.html">Game Dev</li>
                 <li><a href="gallery/gallery.html">Gallery</li>
@@ -26,18 +42,28 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Welcome</h2>
-        <p> Hi, My name is <span class="p-name">Nhlanzeko</span>! <br>
-            <span class="p-job-title">Game Designer & Web Developer</span>
+    <main id="welcome-intro">
+
+        <img class="u-photo circle-photo" src="images/Me and Toffee.jpg" alt="Picture of Nhlanzeko holding a Teddy bear"
+            height="250" width="150">
+        <p id="name-intro"> Hi, I'm <span class="p-name">Nhlanzeko.</span></p>
+        <p><span class="p-job-title job">Game Designer & Web Developer</span></p>
+        <p id="my-introduction">Join me on this exciting
+            journey as I
+            share my projects and ideas, blending technology and creativity to bring engaging experiences to life. Thank
+            you for
+            visiting!
         </p>
-        <img class="u-photo" src="images/Me and Toffee.jpg" alt="Picture of Nhlanzeko holding a Teddy bear" height="250"
-            width="150">
+        <a href="#featured-works" class="down-arrow">⬇\/</a>
+        <section id="featured-works">
+            <h2>Featured Works</h2>
+            <!-- Your projects go here -->
+        </section>
+
+
     </main>
 
-    <footer>
-        <p>2025 Nhlanzeko. All rights reserved.</p>
-    </footer>
+
 
 </body>
 
