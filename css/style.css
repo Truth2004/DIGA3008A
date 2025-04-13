@@ -43,32 +43,52 @@ nav ul li a {
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-
 }
+.u-photo.circle-photo {
+    display: block;
+    margin: 0 auto;
+  }
 
-#name-intro{
-    margin-top: 10px;
-    font-size: 50px;
-
-}
 .job{
     opacity: 60%;
     font-size: 20px;
 }
 
-#welcome-intro{
-    text-align: center;
-    color: #ffffff;
-    margin-top: 50px;
-    max-width: 600px; /* or 40ch (characters) for even better control */
-  margin-left: auto;
-  margin-right: auto;
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center; 
+    text-align: center; 
 }
 
-#my-introduction{
-    opacity: 60%;
-    font-size: 18px;
+.hero-text{
+    text-align: center;
 }
+
+.hero-text h1{
+    font-size: 60px;
+}
+
+.hero-text p{
+    font-size: 20px;
+}
+
+.hero-text .btn{
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: rgb(49, 48, 48);
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+} 
+
+.hero-text .btn:hover{
+    background-color: rgb(121, 121, 121);
+}
+
+
 
 .burger-button{
     font-size: 30px;
@@ -116,3 +136,68 @@ nav ul li a {
     left: 0;
 }
 
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card{
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    color: black;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+font-size: 28px;
+margin-bottom: 8px;
+text-align: center;
+}
+
+.card-content p{
+    color: rgb(91, 91, 97);
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-left: 36%;
+    color: #ffffff;
+}
+
+
+
+
+#featured-works {
+    color: #000000;
+    min-height: 100vh;
+    background-color: white; /* White background */
+    padding: 50px 20px; /* Optional: adds space around the content */
+
+}
+
+#featured-works h2{
+    text-align: center;
+    font-size: 35px;
+}
