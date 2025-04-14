@@ -9,7 +9,7 @@ h3 {
 }
 
 a {
-    color: #908f8f;
+    color: #848484;
     text-decoration: none;
 }
 
@@ -232,4 +232,9 @@ text-align: center;
     color: white;
     text-align: center;
     padding: 20px;
+  }
+
+  .site-footer a{
+    color: white;
+    font-size: 30px;
   }
