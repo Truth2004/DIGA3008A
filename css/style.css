@@ -30,6 +30,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover{
+    color: #626161;
+}
+
 .Page{
     color: #ffffff;
     font-size: 20px;
@@ -203,4 +207,8 @@ text-align: center;
 #featured-works h2{
     text-align: center;
     font-size: 35px;
+}
+
+.site-footer{
+    margin-bottom: 10px;
 }
