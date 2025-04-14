@@ -9,3 +9,9 @@ img {
   section {
     text-align: center;
   }
+
+  body {
+    background-color: white;
+
+    color: black;
+  }
