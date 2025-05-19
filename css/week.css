@@ -8,7 +8,9 @@
 
   body {
     background-color: white;
+    font-family: 'Public Sans', 'Inter',  sans-serif;
     color: black;
+    font-size: 20px;
   }
 
   img {
@@ -18,3 +20,23 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  article {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
