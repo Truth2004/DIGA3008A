@@ -40,3 +40,56 @@ img {
   .p-summary{
     text-align: center;
   }
+
+  .palette {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+ border: #000000 1px solid;
+}
+
+.color {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.color span {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.color:nth-child(1) {
+  background: #FFFFFF;
+}
+
+.color:nth-child(2) {
+  background: #ACAFAC;
+}
+
+.color:nth-child(3) {
+  background: #131516;
+}
+
+.color:nth-child(4) {
+  background: #000000;
+}
+
+.color:hover {
+  flex: 2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.color:hover span {
+  opacity: 1;
+}
