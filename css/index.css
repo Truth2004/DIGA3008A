@@ -1,58 +1,139 @@
-.circle-photo{
-    width: 150px;
+
+
+.hero-section {
+   background-color: #181818;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: -40px;
+}
+
+.hero-image {
+  width: 150px;
   height: 150px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border: 3px solid rgb(78, 78, 78);
 }
-.u-photo.circle-photo {
-    display: block;
-    margin: 0 auto;
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.hero-section .dot {
+  color: #ffffff;
+}
+
+.hero-section h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #d1d1d1;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero-button:hover {
+  background: white;
+  color: #0f0f0f;
+}
+
+.scroll-down {
+  font-size: 2rem;
+  margin-top: 40px;
+  animation: bounce 2s infinite;
+  color: #aaa;
+}
+
+/* Simple bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
-
-.job{
-    opacity: 60%;
-    font-size: 20px;
+  50% {
+    transform: translateY(8px);
+  }
 }
 
-.hero {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center; 
-    text-align: center; 
-    background-color: #181818;
+ .value-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.hero-text{
-    text-align: center;
+.value-intro h2 {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.hero-text h1{
-    font-size: 60px;
+.value-intro p {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #555;
 }
 
-.hero-text p{
-    font-size: 20px;
+.value-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
 }
 
-.hero-text .btn{
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: rgb(49, 48, 48);
-    color: #ffffff;
-    border-radius: 20px;
-    text-decoration: none;
-} 
-
-.hero-text .btn:hover{
-    background-color: rgb(121, 121, 121);
+.value-block {
+  flex: 1 1 300px;
+  max-width: 360px;
 }
+
+.value-block h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.value-block p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
 
 #featured-works {
-    color: #000000;
+    color: #ffffff;
     min-height: 100vh;
-    background-color: white; /* White background */
+    background-color: rgb(0, 0, 0); /* White background */
     padding: 50px 20px; /* Optional: adds space around the content */
 
 }
@@ -60,4 +141,158 @@
 #featured-works h2{
     text-align: center;
     font-size: 35px;
+}
+
+@layer base, demo;
+@import url(https://fonts.bunny.net/css?family=abel:400);
+
+@layer demo {
+	.carousel {
+        padding-bottom: 2rem; /* Or slightly more */
+  overflow: visible;
+		--items: 6;
+		--carousel-duration: 40s;
+		@media (width > 600px) {
+			--carousel-duration: 30s;
+		}
+		--carousel-width: min(
+			80vw,
+			1200px
+		); /* note - it will "break" if it gets too wide and there aren't enough items */
+		--carousel-item-width: 280px;
+		--carousel-item-height: 450px;
+		--carousel-item-gap: 2rem;
+
+		--clr-cta: rgb(0, 0, 0);
+
+		position: relative;
+		width: var(--carousel-width);
+		height: var(--carousel-item-height);
+		overflow: clip;
+
+		&[mask] {
+			/* fade out on sides */
+			mask-image: linear-gradient(
+				to right,
+				transparent,
+				black 10% 90%,
+				transparent
+			);
+		}
+
+		&[reverse] > article {
+			animation-direction: reverse;
+		}
+		/* hover pauses animation */
+		&:hover > article {
+			animation-play-state: paused;
+		}
+	}
+	.carousel > article {
+		position: absolute;
+		top: 0;
+		left: calc(100% + var(--carousel-item-gap));
+		width: var(--carousel-item-width);
+		height: var(--carousel-item-height);
+		display: grid;
+		grid-template-rows: 200px auto 1fr auto;
+		gap: 0.25rem;
+		border: 1px solid light-dark(rgba(0 0 0 / 0.25), rgba(255 255 255 / 0.15));
+
+		padding-block-end: 1rem;
+		border-radius: 10px;
+		background: light-dark(white, rgba(255 255 255 / 0.05));
+		color: light-dark(rgb(49, 65, 88), white);
+
+		/* animation */
+		will-change: transform;
+		animation-name: marquee;
+		animation-duration: var(--carousel-duration);
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-delay: calc(
+			var(--carousel-duration) / var(--items) * 1 * var(--i) * -1
+		);
+		&:nth-child(1) {
+			--i: 0;
+		}
+		&:nth-child(2) {
+			--i: 1;
+		}
+		&:nth-child(3) {
+			--i: 2;
+		}
+		&:nth-child(4) {
+			--i: 3;
+		}
+		&:nth-child(5) {
+			--i: 4;
+		}
+		&:nth-child(6) {
+			--i: 5;
+		}
+		&:nth-child(7) {
+			--i: 6;
+		}
+		&:nth-child(8) {
+			--i: 7;
+		}
+	}
+	.carousel img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+
+		border-radius: 10px 10px 0 0;
+	}
+	.carousel > article > *:not(img) {
+		padding: 0 1rem;
+	}
+	.carousel > article > div {
+		grid-row: span 2;
+		display: grid;
+		grid-template-rows: subgrid;
+		font-size: 0.8rem;
+	}
+	.carousel > article h2 {
+		font-size: 1.2rem;
+		font-weight: 300;
+		padding-block: 0.75rem 0.25rem;
+		margin: 0;
+	}
+	.carousel > article p {
+		margin: 0;
+	}
+	.carousel > article a {
+		text-decoration: none;
+		text-transform: lowercase;
+		border: 1px solid var(--clr-cta);
+		color: light-dark(var(--clr-cta), white);
+		border-radius: 3px;
+		padding: 0.25rem 0.5rem;
+		place-self: start;
+		transition: 150ms ease-in-out;
+		&:hover,
+		&:focus-visible {
+			background-color: var(--clr-cta);
+			color: white;
+			outline: none;
+		}
+	}
+
+	@keyframes marquee {
+		100% {
+			transform: translateX(
+				calc(
+					(var(--items) * (var(--carousel-item-width) + var(--carousel-item-gap))) *
+						-1
+				)
+			);
+		}
+	}
+}
+
+.carousel {
+  margin-inline: auto;
+  margin-top: 100px;
 }

@@ -54,10 +54,6 @@ nav ul li a:hover{
     margin: 15px;
 }
 
-
-
-
-
 .burger-button{
     font-size: 30px;
     color: white;
@@ -161,22 +157,6 @@ text-align: center;
     background-color: #636161;
 }
 
-
-
-
-#featured-works {
-    color: #000000;
-    min-height: 100vh;
-    background-color: white; /* White background */
-    padding: 50px 20px; /* Optional: adds space around the content */
-
-}
-
-#featured-works h2{
-    text-align: center;
-    font-size: 35px;
-}
-
 .site-footer {
     margin-top: auto; /* THIS pushes it to the bottom */
     background-color: #333;
@@ -190,30 +170,4 @@ text-align: center;
     font-size: 30px;
   }
 
-  .value-section {
-  background-color: #fff;
-  padding: 4rem 2rem;
-  border-top: 1px solid #eee;
-  color: #333;
-}
 
-.value-section .container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.value-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.value-section h3 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  color: #444;
-}
-
-.value-section p {
-  line-height: 1.6;
-  margin-top: 0.5rem;
-}
