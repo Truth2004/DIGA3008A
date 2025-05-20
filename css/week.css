@@ -7,7 +7,7 @@
   }
 
   body {
-    background-color: white;
+   background-color: rgb(32, 32, 32);
     font-family: 'Public Sans', 'Inter',  sans-serif;
     color: black;
     font-size: 20px;
@@ -39,4 +39,8 @@
       border: 1px solid #ccc;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dt-published {
+      color: white;
     }

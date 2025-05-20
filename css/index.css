@@ -131,9 +131,9 @@
 
 
 #featured-works {
-    color: #ffffff;
+    color: #000000;
     min-height: 100vh;
-    background-color: rgb(0, 0, 0); /* White background */
+    background-color: rgb(255, 255, 255); /* White background */
     padding: 50px 20px; /* Optional: adds space around the content */
 
 }
@@ -264,6 +264,7 @@
 		margin: 0;
 	}
 	.carousel > article a {
+        
 		text-decoration: none;
 		text-transform: lowercase;
 		border: 1px solid var(--clr-cta);
@@ -275,7 +276,7 @@
 		&:hover,
 		&:focus-visible {
 			background-color: var(--clr-cta);
-			color: white;
+			color: rgb(94, 94, 94);
 			outline: none;
 		}
 	}
@@ -295,4 +296,70 @@
 .carousel {
   margin-inline: auto;
   margin-top: 100px;
+}
+
+/* Section styling */
+#skills {
+  padding: 40px 20px;
+  background-color: #2c2c2c;
+  color: white;
+  text-align: center;
+}
+
+/* Section heading with underline */
+#skills h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#skills h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #00ff91;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Skill container as a responsive grid */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual skill */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Icon styling with jump animation */
+.skill img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skill img:hover {
+  transform: translateY(-10px);
+}
+
+/* Label and description */
+.skill h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2em;
+}
+
+.skill p {
+  font-size: 0.9em;
+  color: #ccc;
+  max-width: 300px;
 }
