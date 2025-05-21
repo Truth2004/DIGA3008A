@@ -1,12 +1,4 @@
-.site-footer {
-    margin-top: 520px; /* THIS pushes it to the bottom */
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-
-  body {
+body {
    background-color: rgb(32, 32, 32);
     font-family: 'Public Sans', 'Inter',  sans-serif;
     color: black;

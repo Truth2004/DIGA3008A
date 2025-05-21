@@ -80,12 +80,3 @@ background-color: rgb(118, 112, 112);
     margin-top: 30px;
 }
 }
-
-.site-footer {
-    margin-top: 480px; /* THIS pushes it to the bottom */
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
