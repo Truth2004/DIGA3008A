@@ -190,3 +190,51 @@ text-align: center;
 #backToTop:hover {
     background-color: #333;
 }
+
+.blog-nav {
+  position: fixed;
+   top: 75%; 
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  pointer-events: none; /* allow clicking only buttons */
+}
+
+.blog-nav button {
+  pointer-events: auto;
+  width: 20vw;              /* width relative to viewport width */
+  max-width: 120px;         /* max width so they don’t get too big on large screens */
+  min-width: 80px;          /* min width to keep it usable on small screens */
+  height: 3rem;             /* height relative to font size */
+  border-radius: 1.5rem;    /* pill shape based on height */
+  border: none;
+  background-color: #222;
+  color: white;
+  font-size: 1.5rem;        /* scalable font size */
+  line-height: 1;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  padding: 0 1rem;          /* horizontal padding */
+  margin: 0 0.5rem;
+}
+
+.blog-nav button:hover {
+  background-color: #444;
+  transform: scale(1.1);
+}
+
+.blog-nav button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
