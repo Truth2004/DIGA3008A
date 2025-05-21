@@ -176,8 +176,8 @@ text-align: center;
     right: 40px;
     display: none;
     z-index: 1000;
-    background-color: #000;
-    color: #fff;
+    background-color: #9f9f9f;
+    color: #000000;
     border: none;
     padding: 18px 22px; /* increase padding */
     border-radius: 50%;
