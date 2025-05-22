@@ -1,82 +1,103 @@
-.about{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 70px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', 'Inter',  sans-serif;
+  background-color: #222222;
+  color: #fff;
 }
 
-.about-image{
-    flex: 1.2;
-
+.about {
+  padding: 60px 10%;
+  background-color: #181818;
 }
 
-.about-image img{
-    width: 50%;
-    height: auto;
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.about-content{
-    flex: 1.5;
-    margin-left: 50px;
+.about-img img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: #292929;
 }
 
-.about-content h1{
-font-size: 40px;
-color: white;
-margin-bottom: 15px;
+.about-content {
+  flex: 1;
+  min-width: 280px;
 }
 
-.about-content p{
-
-    font-size: 18px;
-    color: white;
-    line-height: 1.6;
-    margin-bottom: 20px;
+.about-content h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
-.btn-read-more a{
-    display: inline-block;
-    padding: 10px 20px;
-    color: rgb(70, 66, 66);
-    background-color: white;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-transition: 0.3s ease;
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.btn-read-more a:hover{
-background-color: rgb(118, 112, 112);
-
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.social-media{
-    display: flex;
-    gap: 15px;
+.contact-info p {
+  font-size: 0.95rem;
+  margin: 6px 0;
 }
 
-.social-media a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+.contact-info i {
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
 }
 
-.social-media a:hover{
-    color: rgb(122, 119, 119);
+.expertise h3 {
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
 }
 
-@media screen and (max-width: 768px){
-.about{
-    flex-direction: column;
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
 }
-.about-content{
-    margin-left: 0px;
-    margin-top: 20px;
+
+.skills span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
 }
-.about-image{
-    margin-top: 30px;
+
+.typing-container {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Public Sans', 'Inter',  sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  width: fit-content;
+  animation: blinkCursor 0.7s steps(1) infinite;
+  margin: 2rem auto;
+  text-align: center;
 }
+
+@keyframes blinkCursor {
+  0%, 100% { border-color: white; }
+  50% { border-color: transparent; }
 }
