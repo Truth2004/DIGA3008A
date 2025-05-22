@@ -188,8 +188,9 @@ text-align: center;
 }
 
 #backToTop:hover {
-    background-color: #333;
+    background-color: #6e6e6e;
 }
+
 
 .blog-nav {
   position: fixed;
@@ -216,12 +217,10 @@ text-align: center;
    transition: background-color 0.3s ease;
   min-width: 130px;  /* Ensures consistent size */
 }
-}
 
 .blog-nav button:hover {
-  background-color: #333;
+  background-color: #6e6e6e;
 }
-
 @media (max-width: 600px) {
   .blog-nav {
     flex-direction: column;

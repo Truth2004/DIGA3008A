@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 100%;
 }
 
 .hero-content {
@@ -304,6 +305,7 @@
   background-color: #2c2c2c;
   color: white;
   text-align: center;
+  min-width: 100%;
 }
 
 /* Section heading with underline */
@@ -330,6 +332,7 @@
   gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
+  margin-bottom: 45px;
 }
 
 /* Individual skill */
