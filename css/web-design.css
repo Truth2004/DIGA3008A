@@ -94,4 +94,47 @@ img {
   opacity: 1;
 }
 
+/* Sidebar container */
+#sideNav {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* When open, slide into view */
+#sideNav.open {
+  transform: translateX(0);
+}
+
+/* Sidebar links */
+#sideNav a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Toggle button */
+#sideNavToggle {
+  position: fixed;
+  top: 15px;
+  left: 145px;
+  z-index: 1100;
+  background-color: rgb(66, 66, 66)
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 

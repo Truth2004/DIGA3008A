@@ -25,7 +25,7 @@
 
 <body class="h-entry">
     <header>
-        <nav aria-label="Main Navigation">
+        <nav id="mainNav" aria-label="Main Navigation">
             <input type="checkbox" id="check">
             <label for="check" class="burger-button"><i class="fa-solid fa-angle-down"
                     style="color: #ffffff;"></i></i></label>
@@ -50,7 +50,7 @@
             <p class="p-summary">A dive into my design process up until its great finish.</p>
         </section>
         <section>
-            <h2>My Goals</h2>
+            <h2 id="goals">My Goals</h2>
 
             <p>To create a portfolio website that effectively showcases my game design, development, and digital art
                 projects to
@@ -62,7 +62,7 @@
             </p>
         </section>
         <section>
-            <h2>Content mapping</h2>
+            <h2 id="mapping">Content mapping</h2>
             <ul>
                 <li><strong>Homepage</strong> – Introduction and featured works</li>
                 <li><strong>Game Dev page</strong> – Showcase of games I’ve worked on/ developed, mechanics and
@@ -77,11 +77,11 @@
             </ul>
         </section>
         <section>
-            <h2>Users</h2>
+            <h2 id="users">Users</h2>
             <p class="p-summary">Potential employers, collaborators and recruiters.</p>
         </section>
         <section>
-            <h2>UX-User flow</h2>
+            <h2 id="ux">UX-User flow</h2>
             <ol>
                 <li><strong>Homepage</strong> - Features intro, purpose, and snippets of latest projects with clickable
                     thumbnails.</li>
@@ -98,7 +98,7 @@
         </section>
 
         <section>
-            <h2>Design inspiration</h2>
+            <h2 id="inspiration">Design inspiration</h2>
             <p>I’ve taken inspiration from Aaminah Habibs website as it stood out to me. She makes use
                 of a
                 minimalistic modern design that prioritizes her content, which also aligns with the goal
@@ -120,7 +120,7 @@
             </div>
         </section>
         <section>
-            <h2>Wireframe</h2>
+            <h2 id="wireframe">Wireframe</h2>
             <ol>
                 Base Idea <br>
                 <li> <img src="../images/base-idea.png" alt="Base Idea" height="400" width="600"></li> <br>
@@ -144,7 +144,7 @@
             </ol>
         </section>
         <section>
-            <h2>Style Guide</h2>
+            <h2 id="styleguide">Style Guide</h2>
             <p>Statement: My website will showcase a minimalistic aesthetic prioritizing user friendliness,
                 in highlighting my skills in interactive media and Game design.</p>
 
@@ -265,7 +265,25 @@
         </section>
 
         <button id="backToTop" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+        <!-- Right Side Nav Toggle Button -->
+        <button id="sideNavToggle" aria-label="Toggle Side Navigation">
+            <i class="fas fa-bars"></i>
+        </button>
 
+        <!-- Right Side Nav -->
+        <aside id="sideNav" class="side-nav">
+            <nav>
+                <ul>
+                    <li><a href="#goals">Goals</a></li>
+                    <li><a href="#mapping">Content Mapping</a></li>
+                    <li><a href="#users">Users</a></li>
+                    <li><a href="#ux">User Flow</a></li>
+                    <li><a href="#inspiration">Inspiration</a></li>
+                    <li><a href="#wireframe">Wireframes</a></li>
+                    <li><a href="#styleguide">Style Guide</a></li>
+                </ul>
+            </nav>
+        </aside>
         <!-- Link your JavaScript file -->
         <script src="../script.js"></script>
 
