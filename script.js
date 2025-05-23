@@ -57,7 +57,7 @@ if (nextBtn && currentIndex < blogPages.length - 1) {
   nextBtn.disabled = true;
 }
 
-
+//typing effect for about page
 document.addEventListener("DOMContentLoaded", () => {
   const text = "Design. Code. Create. Repeat.";
   const typingText = document.getElementById("typing-text");
