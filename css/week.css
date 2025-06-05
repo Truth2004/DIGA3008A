@@ -37,3 +37,27 @@ body {
       color: rgb(0, 0, 0);
     }
 
+    .pagination {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pagination a {
+  color: #66aaff;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-weight: normal;
+  transition: 0.2s ease;
+}
+
+.pagination a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.pagination a.active {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
