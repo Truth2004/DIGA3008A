@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A visual gallery of my digital artwork and creative experiments">
     <meta name="author" content="Nhlanzeko">
-    <link rel="stylesheet" href="../css/normalise.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gallery.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -21,7 +20,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
 
         <nav aria-label="Main Navigation">
             <input type="checkbox" id="check">
@@ -30,22 +29,40 @@
 
             <label for="Page" class="Page">Gallery</label>
             <ul>
-                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="../game-dev/game-dev.html">Game Dev</a></li>
+                <li><a href="gallery/gallery.html" class="active">Gallery</li>
                 <li><a href="../blogs/blogs.html">Blogs</a></li>
-                <li><a href="../essays/essays.html">Essays</a></li>
-                <li><a href="../about/about.html">About</a></li>
-                <li><a href="../web-design/web-design.html">Web Design</a></li>
+                <li><a href="../essay-exam/essay-exam.html">Essays</a></li>
+                <li><a href="../web-design/web-design.html">Web Design</li>
+                <li><a href="../about-me/about-me.html">About Me</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <p>Welcome to my Gallery! Here you'll find my Digital Art, Game Assets, and more.</p>
+
+        <div class="gallery">
+            <img src="../images/counting-sheep.jpg" alt="Image 1">
+            <img src="../images/caged-mind.jpg" alt="Image 2">
+            <img src="../images/tree-of-many-faces.jpg" alt="Image 3">
+            <img src="../images/boxer-part-1.png" alt="Image 4">
+            <img src="../images/closer-look.png" alt="Image 5">
+            <img src="../images/bound.jpg" alt="Image 6">
+            <img src="../images/self-portait.jpg" alt="Image 7">
+            <img src="../images/entry.jpg" alt="Image 8">
+            <img src="../images/scream.jpg" alt="Image 9">
+            <!-- Add more images here -->
+        </div>
+
+        <div class="overlay" id="overlay">
+            <img src="" alt="Full Image" id="fullImage">
+        </div>
+
+        <script src="../java-script/gallery.js"></script>
+        <footer class="site-footer">
+            <p>© 2025 Nhlanzeko. All rights reserved.</p>
+        </footer>
     </main>
-    <footer class="site-footer">
-        <p>© 2025 Nhlanzeko. All rights reserved.</p>
-    </footer>
-</body>
 
 </html>
