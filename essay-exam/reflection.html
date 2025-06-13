@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A reflection on the implemementation of my website">
+    <meta name="author" content="Nhlanzeko">
+    <link rel="stylesheet" href="../css/normalise.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/50a1a2d140.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/week.css">
+
+    <title>Week 13 Blog Post</title>
+</head>
+
+<body>
+    <header>
+
+
+
+        <nav aria-label="Main Navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="burger-button"><i class="fa-solid fa-angle-down"
+                    style="color: #ffffff;"></i></i></label>
+
+            <label for="Page" class="Page">Week 13</label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../game-dev/game-dev.html">Game Dev</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</li>
+                <li><a href="../blogs/blogs.html">Blogs</a></li>
+                <li><a href="../essay-exam/essay-exam.html">Essays</a></li>
+                <li><a href="../web-design/web-design.html">Web Design</li>
+                <li><a href="../about-me/about-me.html">About Me</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+
+    <main class="h-entry">
+
+
+
+        <article>
+            <h2 class="p-name">Reflection on website implementation</h2>
+            <p>
+                by
+                <a class="p-author h-card" href="../about-me/about-me.html">Nhlanzeko Mwandla</a> on
+                <time class="dt-published" datetime="2025-06-13"> 13 June 2025</time>
+            </p>
+            <p>From the very start, it’s been my goal to create a website where I showcase my skills as a web developer,
+                game designer and artist with a clean minimalistic aesthetic. However, the deeper I got into making this
+                website, the more I started to understand just how important it was to be intentional with my designs
+                and ideas. During the process of making my website, I tried to put a strong emphasis on making it as
+                clear and as user friendly as possible. I made sure whenever I added anything, it was with impactful
+                intentionality and that it still felt intuitive and responsive. Because of this, the way I added UI and
+                UX had a major impact on my code and how its features are structured and implemented. I attempted to
+                make organized code that would easily be scalable for future growth.</p>
+
+            <p>My folder structure makes use of an organized hierarchical information structure where each major section
+                has its own corresponding HTML file in the root directory, eg, Home, Game Dev, Gallery… This helps to
+                keep my sites navigation clear and intuitive. Each of these HTML files are reminiscent of how users will
+                navigate your site, with each page/HTML file being its own destination. I’ve made sure to separate
+                styles in a dedicated css folder, JavaScript in a js folder, and images go into the images folder. I’ve
+                made sure that there’s little to no inline styling and made my structure organized so its easier to
+                maintain and expand on a later date. I’ve made sure that HTML is strictly used for content and
+                structure, CSS managers the presentation while the JS handles the interactivity of my site. I make use
+                of consistent readable naming conventions that enable me to easily add more content into existing
+                layouts without needing to restructure anything. Overall, my folder structure supports both user and
+                developer experience as it is easy to navigate on both sides due to it being clean and logical.</p>
+
+            <p>Throughout my site, I make use of semantic HTML tags like &lt;header&gt;, &lt;main&gt;, &lt;nav&gt;,
+                &lt;section&gt; and &lt;article&gt; to give browsers and screen readers context on the structure and
+                meaning of each section. I mainly use these elements to communicate how content is grouped to the user.
+                Each blog page with weekly entries is treated as a self-contained article and makes use of the
+                &lt;article&gt; tag, while the page navigations are wrapped in a &lt;nav&gt; tag to help communicate to
+                users and screen readers that it’s for navigating between pages. The heading tag, eg, &lt;h1&gt;, is
+                used throughout my website to create visual hierarchy and topic nesting which benefits both SEO and
+                screen readers. Interface elements like buttons and other interactive components are all expressed
+                through native HTML elements like &lt;button&gt; which ensures that they’re keyboard accessible by
+                default and easily understood by assistive technologies. Using semantic elements helps to separate
+                presentation from meaning. I used the &lt;div&gt; class sparingly if there was something else I could’ve
+                used instead that gave more information to the user. Overall, semantic markup has played a massive role
+                in improving the UX and accessibility of my website while also helping to keep my code more readable.
+            </p>
+
+            <p>All pages for the most part have essential metadata such as their responsive viewport settings, page
+                titles and a short description of what that page is for. As basic as it is, it goes a long way in
+                improving accessibility. This makes it easier for search engines and browsers to interpret my content
+                better.</p>
+
+            <p>I’ve used external CSS stylesheets to manage all visual stylings across my whole website. I made sure to
+                avoid inline styling which helps to keep the HTML clean and consistent across all pages. These
+                stylesheets ensure that the website is easier to maintain as well as making any future updates easier as
+                the code for the visuals are focused in specific external css files. I tried to make my css as
+                consistent as I could by making use of recurring class names with the correct naming conventions so I
+                could use them on multiple pages without having to have more stylesheets than needed. Elements like the
+                navigation, my gallery and text sections respond to different platform screen sizes which improves
+                accessibility and the overall user experience. My css helps to support clean code as well as helping in
+                visual consistency and creating a user-friendly interface.</p>
+
+            <p>I make use of Javascript in my website for interactivity purposes by targeting and manipulating DOM
+                elements based on the actions a user performs. The main key implementations I make use of include a back
+                to top button that appears after scrolling a certain number of pixels from the top and uses
+                window.scrollTo() for smooth upward movement, A typing animation on my About page that loops through the
+                phrase “Design. Code.Create.Repeat”, using textContent updates and delays =, creating a subtle branded
+                animation. A toggleable side navigation menu using classList.toggle(), which improves mobile UX and
+                keeps navigation accessible without taking up space. On my gallery page, clicking an image triggers a
+                lightbox effect and the full image appears in an overlay using style.display=’flex’, and clicking the
+                overlay closes it again, improving engagement without breaking the browsing flow. The blog navigation
+                buttons dynamically determine their behaviour based on the current page position in a JavaScript array.
+                This allows for streamlined navigation across the weekly blogs section improving flow. In all these
+                cases, I used DOM methods like getElementById, querySelectorAll, addEventListner, and properties like
+                style, src and textContent to update elements based on user interaction. All scripts are kept in
+                externel js files and are linked in the html using &lt;script src=””&gt;, keeping the logic clean and
+                separate from content and styling.</p>
+
+            <p>Overall, the sites design and technical structure work together to create what I’d deem as a balanced and
+                thoughtful user experience. My implementation reflects a growing understanding of how UI and UX
+                decisions can and should drive how a site is built under the hood. Although I still have a long way to
+                go and improving on how I do things, this project helped me gain a bit of confidence in learning better
+                practices of writing clean code, while also prioritizing usability, accessibility and responsiveness. I
+                look forward to any opportunities that will allow me to grow and further my craft in future and I look
+                forward to being an even better web developer by continuing to explore in my studies.</p>
+
+        </article>
+    </main>
+    <button id="backToTop" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="blog-nav">
+        <button id="prevBtn">←</button>
+        <button id="nextBtn">→</button>
+    </div>
+    <div class="pagination">
+        <a href="essay-1.html">1</a>
+        <a href="essay-2.html">2</a>
+        <a href="reflection.html" class="active">3</a>
+    </div>
+    <!-- Link your JavaScript file -->
+    <script src="../java-script/blogs.js"></script>
+    <script src="../java-script/script.js"></script>
+    <footer class="site-footer">
+
+        <p>© 2025 Nhlanzeko. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
