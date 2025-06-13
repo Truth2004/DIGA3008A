@@ -9,7 +9,8 @@ const blogPages = [
   "week-10.html",
   "week-11.html",
   "week-12.html",
-  "week-13.html"
+  "week-13.html",
+  "Week-14.html"
   // Add more as needed
 ];
 
