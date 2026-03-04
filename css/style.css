@@ -46,12 +46,12 @@ nav ul li a:hover{
     color: #626161;
 }
 
-.Page{
+.Page {
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
     line-height: 75px;
-    margin: 15px;
+    margin: 0 15px; /* Changes margin to 0px top/bottom, 15px left/right */
 }
 
 .burger-button{
