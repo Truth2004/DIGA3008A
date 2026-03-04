@@ -1,19 +1,22 @@
 .hero-section {
-   background-color: #181818;
+  background-color: #181818;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  /* Adjusted base padding and added box-sizing */
+  padding: 60px 20px; 
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 100%;
+  width: 100%; 
+  /* CRITICAL: Keeps padding inside the 100% width */
+  box-sizing: border-box; 
 }
 
 .hero-content {
   max-width: 700px;
   margin: 0 auto;
-  margin-top: -40px;
+  /* Removed the negative margin hack */
 }
 
 .hero-image {
@@ -69,6 +72,30 @@
   margin-top: 40px;
   animation: bounce 2s infinite;
   color: #aaa;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  .hero-section {
+    /* Shrinks the top gap and side padding on mobile */
+    padding: 30px 15px; 
+  }
+
+  .hero-section h1 {
+    /* Prevents the title from overflowing horizontally */
+    font-size: 2.5rem; 
+  }
+
+  .hero-image {
+    /* Scales the image down slightly for smaller screens */
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section h2 {
+    font-size: 1.1rem;
+  }
 }
 
 /* Simple bounce animation */
