@@ -448,11 +448,8 @@
 /* Skill container as a responsive grid */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-bottom: 45px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
 }
 
 /* Individual skill */
