@@ -78,7 +78,7 @@
 @media (max-width: 768px) {
   .hero-section {
     /* Shrinks the top gap and side padding on mobile */
-    padding: 30px 15px; 
+    padding: 27px 15px; 
   }
 
   .hero-section h1 {
