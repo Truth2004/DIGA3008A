@@ -1,4 +1,4 @@
-//typing effect for about page
+// typing effect for about page
 document.addEventListener("DOMContentLoaded", () => {
   const text = "Design. Code. Create. Repeat.";
   const typingText = document.getElementById("typing-text");
@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!deleting) {
       typingText.textContent += text.charAt(index);
       index++;
+      
       if (index === text.length) {
         deleting = true;
         setTimeout(typeLoop, 1000); // pause before deleting
@@ -17,7 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       typingText.textContent = typingText.textContent.slice(0, -1);
       index--;
-      if (index === 0) {
+      
+      // Stop deleting when we reach the first character ("D")
+      if (index === 1) {
         deleting = false;
       }
     }
